@@ -138,7 +138,7 @@ frontend:
   service:
     ## Service type
     ##
-    type: ClusterIP
+    type: LoadBalancer
     ## HTTP Port
     ##
     port: 80
