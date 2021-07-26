@@ -5,12 +5,12 @@ metadata:
   namespace: argocd
 spec:
   destination:
-    server: 10.197.116.129
+    server: https://10.197.116.129:6443
   project: default
-  syncPolicy:
-    automated:
-      prune: false
-      selfHeal: false
+#  syncPolicy:
+#    automated:
+#      prune: false
+#      selfHeal: false
   source:
     path: tkg-config 
     repoURL: https://github.com/beyondelastic/gitops-tkgs.git
