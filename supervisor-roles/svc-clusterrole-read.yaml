@@ -5,7 +5,7 @@ metadata:
   name: argo-cluster-read
 rules:
 - apiGroups:
-  - ""
+  - '*'
   resources:
   - '*'
   verbs:
