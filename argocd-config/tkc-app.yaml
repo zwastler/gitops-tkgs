@@ -12,6 +12,6 @@ spec:
 #      prune: false
 #      selfHeal: false
   source:
-    path: tkg-config 
+    path: tkc-config 
     repoURL: https://github.com/beyondelastic/gitops-tkgs.git
     targetRevision: HEAD
