@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  creationTimestamp: null
+  name: argo-cluster-read-argocdsa
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: argo-cluster-read
+subjects:
+- kind: ServiceAccount
+  name: argocdsa
+  namespace: tools
