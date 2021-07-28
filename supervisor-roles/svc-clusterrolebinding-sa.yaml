@@ -10,4 +10,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: argocdsa
-  namespace: kube-system
+  namespace: tools
