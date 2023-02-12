@@ -11,18 +11,19 @@ spec:
 
   topology:
     controlPlane:
-      replicas: 3
+      replicas: 1
       vmClass: best-effort-small
       storageClass: tanzu-storage
 
     nodePools:
     - name: workerpool-1
-      replicas: 6
+      replicas: 2
       vmClass: worker-8-16
       storageClass: tanzu-storage
 
   settings:
     storage:
       defaultClass: tanzu-storage
-    network:
-      serviceDomain: zwtech.pro
+      classes:
+        - tanzu-storage
+        - tanzu-arch
